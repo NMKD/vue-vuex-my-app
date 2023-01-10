@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container m-5">
+    <v-counter />
+    <v-buttons />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import VCounter from './components/Counter.vue'
+import VButtons from './components/Buttons.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VCounter,
+    VButtons
   }
 }
 </script>
